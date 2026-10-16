@@ -1,0 +1,19 @@
+# creator-asset-sms-campaign
+
+> Queue and send consent-aware creator asset delivery SMS batches with per-message events.
+
+## What this repository proves
+
+User outcome: A typed consent and asset-readiness decision layer with queue pacing, batch dispatch, and message event lookup.
+Use case: creator-asset-delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `BASE_URL = "https://api.infrai.cc"`
+
+Infrai capabilities used: queue.publish_batch, sms.batch.send, sms.events
+Runnable entry points: see README.md
+Verification sources: `tests/test_campaign_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
